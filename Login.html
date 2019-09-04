@@ -15,14 +15,14 @@
           <div class="tab-header">
               <Div class ="container">
                   <img src="img/single_user.png" class="mx-auto d-block">
-                  <form #loginform='ngForm' class="mb-4" autocomplete="off" (ngSubmit)="login(loginform)">
+                  <form #loginform='ngForm' class="mb-4" autocomplete="off">
                     <div class="form-group">
                       <label>Email</label>
-                      <input ngModel #email="ngModel" name="email" type="email" class="form-control" placeholder="Enter Email" required>
+                      <input name="email" type="email" class="form-control" placeholder="Enter Email" required>
                     </div>
                     <div class="form-group">
                       <label>Password</label>
-                      <input ngModel #password="ngModel" name="password" type="password" class="form-control" placeholder="Enter Password" required>
+                      <input name="password" type="password" class="form-control" placeholder="Enter Password" required>
                     </div>
                     <div class="form-row">
                       <div class="form-group col-md-8 offset-md-2">
