@@ -38,7 +38,7 @@ button[type=submit].btn{
     color: #fff;
 }
 
-button[type=text].btn{
+button[type=submit].btn2{
     border-radius: 20px;
     background-color: #c52b04;
     color: #fff;
