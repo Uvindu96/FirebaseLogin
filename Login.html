@@ -8,14 +8,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-
     <div class="wrapper">
         <div class="wrapped-div">
           <div class="tab-header">
               <Div class ="container">
                   <img src="img/single_user.png" class="mx-auto d-block">
-                  <form #loginform='ngForm' class="mb-4" autocomplete="off">
+                  <form action="checkbox-form.php" class="mb-4" autocomplete="off">
                     <div class="form-group">
                       <label>User Name</label>
                       <input name="username" type="email" class="form-control" placeholder="Enter user name" required>
@@ -26,8 +24,8 @@
                     </div>
                     <div class="form-row">
                       <div class="form-group col-md-8 offset-md-2">
-                        <button type="submit" class="btn btn-lg btn-block" onclick="login()">Login </button>
-                        <button type="text" class="btn btn-lg btn-block"><a href="signup.html">Sign-Up</a></button >
+                        <button type="submit" class="btn btn-lg btn-block">Login </button>
+                        <button type="submit" class="btn btn-lg btn-block" onclick="window.location.href = 'signup.html';">Sign-Up</button >
                       </div>
                     </div>
                   </form> 

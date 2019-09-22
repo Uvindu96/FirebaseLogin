@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" type="Text/css" href="style.css">
+  <link rel="stylesheet" type="Text/css" href="checkbox.css">
   <title>Login Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -28,6 +29,16 @@
                       <label>Password</label>
                       <input name="password" type="password" class="form-control" placeholder="Enter Password" required>
                     </div>
+                    <div class="form-group">
+                      <label class="box"> Customer
+                        <input type="checkbox" id="customer">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="box"> Physician
+                        <input type="checkbox" id="physician">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
                     <div class="form-row">
                       <div class="form-group col-md-8 offset-md-2">
                         <button type="submit" class="btn btn-lg btn-block" >Login</button>
@@ -38,5 +49,17 @@
           </div>
         </div>
       </div> 
+
+      <script>
+        function myFunction() {
+          var checkBox = document.getElementById("myCheck");
+          var text = document.getElementById("text");
+          if (checkBox.checked == true){
+            text.style.display = "block";
+          } else {
+             text.style.display = "none";
+          }
+        }
+        </script>
 </body>
 </html>
