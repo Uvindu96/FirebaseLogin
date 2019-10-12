@@ -1,5 +1,6 @@
 .display-4{
     padding-top: 25px;
+    padding-left: 30px;
 }
 
 input.ng-touched.ng-invalid{
