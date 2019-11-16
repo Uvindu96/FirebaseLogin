@@ -57,7 +57,7 @@ div.form-group.required>label:first-child:after{
 }
 
 #toast-container > div {
-    opacity:1;
+    opacity:2;
 }
 
 .wrapper {
